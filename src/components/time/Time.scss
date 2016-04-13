@@ -1,0 +1,14 @@
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24em;
+  font: 400 1em/1.4 'Open Sans', sans-serif;
+  color: #404040;
+  background: rgba(147, 128, 108, .1);
+  padding: 1em;
+
+  &__currentTime {
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,4 @@
+# Files in here will NOT be linted
+
+dist/
+webpack.config.js

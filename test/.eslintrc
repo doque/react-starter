@@ -1,0 +1,10 @@
+{
+  extends: 'airbnb',
+  env: {
+    mocha: true,
+    node: true,
+  },
+  globals: {
+    sinon: true
+  }
+}
