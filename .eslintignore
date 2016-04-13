@@ -2,3 +2,5 @@
 
 dist/
 webpack.config.js
+coverage
+test/_json
