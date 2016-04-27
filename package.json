@@ -13,14 +13,14 @@
     "lint:test": "eslint test --ext .js",
     "lint:scss": "stylelint **/*.scss --syntax scss",
     "start": "webpack-dev-server",
-    "test": "mocha --opts .mocha.opts test/**/*spec.js",
-    "test:watch": "mocha --opts .mocha.opts test/**/*.spec.js -w --watch-extensions js,jsx",
-    "test:coverage": "nyc npm run test"
+    "test": "mocha test/**/*.spec.js",
+    "test:watch": "mocha test/**/*.spec.js -w --watch-extensions js,jsx",
+    "test:cov": "nyc npm run test",
+    "test:cov:show": "nyc --reporter html npm run test && open coverage/index.html"
   },
   "nyc": {
     "extension": [
-      ".jsx",
-      ".js"
+      ".jsx"
     ],
     "include": [
       "src"
